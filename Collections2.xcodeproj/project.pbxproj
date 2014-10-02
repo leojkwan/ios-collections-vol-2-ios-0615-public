@@ -35,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		41843E6BD69D46FBB65A231D /* libPods-Collections2Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Collections2Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D1591309948C1511B73FE8C /* Pods-Collections2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collections2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Collections2Tests/Pods-Collections2Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		726CD382193A8615003902C0 /* Collections2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collections2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		726CD385193A8615003902C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		726CD387193A8615003902C0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,7 +54,7 @@
 		726CD3B4193A86E8003902C0 /* FISCollections2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISCollections2.h; sourceTree = "<group>"; };
 		726CD3B5193A86E8003902C0 /* FISCollections2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISCollections2.m; sourceTree = "<group>"; };
 		726CD3B7193A8707003902C0 /* FISCollections2Spec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISCollections2Spec.m; sourceTree = "<group>"; };
-		C18DC91EA027460D857D55A4 /* Pods-Collections2Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collections2Tests.xcconfig"; path = "Pods/Pods-Collections2Tests.xcconfig"; sourceTree = "<group>"; };
+		955C21EA06230CA02EDEA166 /* Pods-Collections2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collections2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Collections2Tests/Pods-Collections2Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28FE1A7E7878EBFFAFDF1A6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D1591309948C1511B73FE8C /* Pods-Collections2Tests.debug.xcconfig */,
+				955C21EA06230CA02EDEA166 /* Pods-Collections2Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		726CD379193A8615003902C0 = {
 			isa = PBXGroup;
 			children = (
@@ -88,7 +98,7 @@
 				726CD3A4193A8615003902C0 /* Collections2Tests */,
 				726CD384193A8615003902C0 /* Frameworks */,
 				726CD383193A8615003902C0 /* Products */,
-				C18DC91EA027460D857D55A4 /* Pods-Collections2Tests.xcconfig */,
+				28FE1A7E7878EBFFAFDF1A6D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -261,7 +271,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-Collections2Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Collections2Tests/Pods-Collections2Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F75A2962EDBD4A6EA2BE376E /* Check Pods Manifest.lock */ = {
@@ -428,7 +438,7 @@
 		};
 		726CD3B2193A8615003902C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C18DC91EA027460D857D55A4 /* Pods-Collections2Tests.xcconfig */;
+			baseConfigurationReference = 5D1591309948C1511B73FE8C /* Pods-Collections2Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Collections2.app/Collections2";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -451,7 +461,7 @@
 		};
 		726CD3B3193A8615003902C0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C18DC91EA027460D857D55A4 /* Pods-Collections2Tests.xcconfig */;
+			baseConfigurationReference = 955C21EA06230CA02EDEA166 /* Pods-Collections2Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Collections2.app/Collections2";
 				FRAMEWORK_SEARCH_PATHS = (
