@@ -133,7 +133,7 @@ describe(@"FISCollections2", ^{
     });
     
     describe(@"removeNonStrings", ^{
-        it(@"remove everything that's not an string from an array",^{
+        it(@"remove everything that's not a string from an array",^{
             NSArray *result = [collection removeNonStrings:@[@"blake", @1, @{@"hello": @"ey"}]];
             expect(result).to.equal(@[@"blake"]);
         });
