@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "FISCollections2.h"
 
 @interface FISAppDelegate : UIResponder <UIApplicationDelegate>
 

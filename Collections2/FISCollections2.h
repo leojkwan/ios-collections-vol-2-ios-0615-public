@@ -13,7 +13,7 @@
 //declare methods here
 -(BOOL) beginsWithC:arrayWithC;
 
--(NSArray *) containsA;
+-(NSArray *)containA:array;
 
 -(NSString *) firstWa;
 

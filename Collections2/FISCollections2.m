@@ -14,22 +14,31 @@
 
 -(BOOL) beginsWithC:arrayWithC {
     
-    for(NSInteger i = 0; i < [arrayWithC count]; i++) {
-        if([arrayWithC[i] characterAtIndex:0] == @99)  {
-            [arrayWithC addObject:arrayWithC[i]];
-            NSLog(@"I'm alivee");
+    for(NSString *word in arrayWithC) {
+        if([word characterAtIndex:0] == 100)  {
+            continue;
         }
         else {
-           return false;
+           return NO;
         }
         
     }
-    return true;
+    return YES;
 }
 
 
--(NSArray *) containsA {
-    return nil;
+-(NSArray *)containA:array{
+    NSMutableArray *arrayWithA = [[NSMutableArray alloc] init];
+    for(NSString *word in arrayWithA) {
+        for (NSUInteger i = 0; i < word.length; i++ ) {
+            if ([[NSString stringWithFormat:@"%c", [word characterAtIndex:i]] isEqualToString: @"b" ] ) {
+                [arrayWithA addObject:word];
+                break;
+            }
+        }
+    }
+    
+    return [arrayWithA copy];
 }
 
 
@@ -53,6 +62,11 @@
 -(NSDictionary *) findCool {
     return nil;
 }
+
+-(NSArray *) organizeSchools {
+    return nil;
+}
+
 
 
 

@@ -18,17 +18,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    FISCollections2 *runCollections = [[FISCollections2 alloc] init];
-    
-    NSArray *testArray = @[@"color", @"color", @"color", @"color"];
-    
-    
-    if ([runCollections beginsWithC:testArray] == true) {
-        NSLog(@"TRUE");
-    } else {
-        NSLog(@"FALSE");
-    }
-    
+
     return YES;
 
 }
