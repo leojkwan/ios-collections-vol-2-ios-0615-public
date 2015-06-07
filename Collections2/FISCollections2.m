@@ -12,4 +12,58 @@
 
 //define methods here
 
+-(BOOL) beginsWithC:arrayWithC {
+    
+    for(NSInteger i = 0; i < [arrayWithC count]; i++) {
+        if([arrayWithC[i] characterAtIndex:0] == @99)  {
+            [arrayWithC addObject:arrayWithC[i]];
+            NSLog(@"I'm alivee");
+        }
+        else {
+           return false;
+        }
+        
+    }
+    return true;
+}
+
+
+-(NSArray *) containsA {
+    return nil;
+}
+
+
+
+-(NSString *) firstWa {
+    return nil;
+}
+
+-(NSArray *) removeNonStrings {
+    return nil;
+}
+
+-(NSArray *) countElements {
+    return nil;
+}
+
+-(NSArray *) mergeDataWithKeys:AndData {
+    return nil;
+}
+
+-(NSDictionary *) findCool {
+    return nil;
+}
+
+
+
 @end
+
+
+
+
+
+
+
+
+
+

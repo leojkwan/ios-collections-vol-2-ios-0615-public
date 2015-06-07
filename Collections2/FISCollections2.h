@@ -11,5 +11,21 @@
 @interface FISCollections2 : NSObject
 
 //declare methods here
+-(BOOL) beginsWithC:arrayWithC;
+
+-(NSArray *) containsA;
+
+-(NSString *) firstWa;
+
+-(NSArray *) removeNonStrings;
+
+-(NSArray *) countElements;
+
+-(NSArray *) mergeDataWithKeys:AndData;
+
+-(NSDictionary *) findCool;
+
+-(NSArray *) organizeSchools;
+
 
 @end

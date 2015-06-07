@@ -26,6 +26,8 @@ describe(@"FISCollections2", ^{
     
     beforeAll(^{
         collection = [[FISCollections2 alloc] init];
+        
+        
         keys = @[
                  @{
                      @"first_name":  @"blake"
